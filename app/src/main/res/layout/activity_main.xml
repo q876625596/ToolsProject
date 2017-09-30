@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    tools:context="com.ly.toolsproject.MainActivity">
+
+
+    <TextView
+        android:id="@+id/open"
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:background="#ffccff"
+        android:gravity="center"
+        android:text="open" />
+
+    <TextView
+        android:id="@+id/close"
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:layout_alignParentEnd="true"
+        android:background="#ffccff"
+        android:gravity="center"
+        android:text="close" />
+
+    <TextView
+        android:id="@+id/messge"
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:layout_centerHorizontal="true"
+        android:background="#ffccff"
+        android:gravity="center"
+        android:text="message" />
+
+    <EditText
+        android:id="@+id/commentEdit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/open" />
+
+
+    <ImageView
+        android:id="@+id/image2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="180dp"
+        android:layout_marginTop="320dp"
+        android:src="@mipmap/ic_launcher" />
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/image2"
+        android:layout_toEndOf="@id/image2"
+        android:src="@mipmap/ic_launcher_round" />
+
+    <com.ly.toolsproject.test.ProgressView
+        android:id="@+id/progress"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <FrameLayout
+        android:id="@+id/fragment1"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_alignParentBottom="true"/>
+
+    <FrameLayout
+        android:id="@+id/fragment2"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_above="@id/fragment1" />
+
+</RelativeLayout>
